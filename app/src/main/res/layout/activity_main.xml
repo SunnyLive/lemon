@@ -4,11 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".view.activity.MainActivity"
     android:orientation="vertical"
     >
-
-
 
 
     <FrameLayout
@@ -20,21 +18,73 @@
 
 
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efeff5"
+        />
 
     <RadioGroup
         android:id="@+id/rg_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:orientation="horizontal"
         >
 
         <RadioButton
             android:id="@+id/rb_home_bar"
             android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="home"
+            android:textColor="#3c3c40"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
 
+        <RadioButton
+            android:id="@+id/rb_gallery_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="gallery"
+            android:textColor="#3c3c40"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
 
+        <RadioButton
+            android:id="@+id/rb_video_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="video"
+            android:textColor="#3c3c40"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
 
+        <RadioButton
+            android:id="@+id/rb_book_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="book"
+            android:textColor="#3c3c40"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
 
+        <RadioButton
+            android:id="@+id/rb_per_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="me"
+            android:textColor="#3c3c40"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
 
 
     </RadioGroup>
